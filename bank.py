@@ -69,34 +69,6 @@ class Bank:
                 st.success("✅ Account created successfully!")
                 st.json(info)
 
-    # def create_account(self):
-    #     st.header("🔐 Create New Bank Account")
-    #     name = st.text_input("Enter your name")
-    #     age = st.number_input("Enter your age", min_value=0)
-    #     email = st.text_input("Enter your email")
-    #     contact_no = st.text_input("Enter your contact number")
-    #     cnic = st.text_input("Enter your CNIC number")
-    #     pin = st.text_input("Set a 4-digit PIN", type="password")
-
-    #     if st.button("Create Account"):
-    #         if age < 18 or "@" not in email or len(pin) != 4:
-    #             st.warning("❌ Make sure age is 18+, email is valid, and PIN is 4 digits.")
-    #         else:
-    #             info = {
-    #                 "name": name,
-    #                 "age": age,
-    #                 "email": email,
-    #                 "contact_no": int(contact_no),
-    #                 "CNIC_no": int(cnic),
-    #                 "pin": int(pin),
-    #                 "balance": 0,
-    #                 "account_no": Bank.__accountno_gene()
-    #             }
-    #             Bank.data.append(info)
-    #             Bank.__add_data()
-    #             st.success("✅ Account created successfully!")
-    #             st.json(info)
-
     def deposite_money(self):
         st.header("💰 Deposit Money")
         acc_no = st.text_input("Enter account number")
